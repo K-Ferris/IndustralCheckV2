@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuthFlow | Welcome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+        .theme-transition * {
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #EC4899 100%);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+        }
+        .form-input:focus {
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body class="theme-transition bg-gray-50 dark:bg-gray-900">
+    <div id="app" class="min-h-screen flex flex-col">
+        <!-- Navigation -->
+        <nav class="bg-white dark:bg-gray-800 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 flex items-center">
+                            <i data-feather="lock" class="h-8 w-8 text-indigo-600 dark:text-indigo-400"></i>
+                            <span class="ml-2 text-xl font-bold text-gray-900 dark:text-white">AuthFlow</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button id="theme-toggle" class="p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800">
+                            <i data-feather="sun" class="h-5 w-5 text-gray-900 dark:text-white hidden dark:block"></i>
+                            <i data-feather="moon" class="h-5 w-5 text-gray-900 dark:text-white block dark:hidden"></i>
+                        </button>
+                        <a href="login.html" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium">Sign In</a>
+                        <a href="register.html" class="px-4 py-2 rounded-md btn-primary text-white font-medium">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <main class="flex-grow flex items-center justify-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Secure Authentication <span class="text-indigo-600 dark:text-indigo-400">Simplified</span></h1>
+                        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">Join thousands of users who trust our secure authentication system with advanced dashboard features.</p>
+                        <div class="flex space-x-4">
+                            <a href="register.html" class="px-6 py-3 rounded-md btn-primary text-white font-medium">Get Started</a>
+                            <a href="login.html" class="px-6 py-3 rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-50 dark:hover:bg-gray-800">Sign In</a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="gradient-bg rounded-2xl p-1">
+                            <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl">
+                                <div class="p-4 border-b border-gray-200 dark:border-gray-700">
+                                    <div class="flex space-x-2">
+                                        <div class="h-3 w-3 rounded-full bg-red-500"></div>
+                                        <div class="h-3 w-3 rounded-full bg-yellow-500"></div>
+                                        <div class="h-3 w-3 rounded-full bg-green-500"></div>
+                                    </div>
+                                </div>
+                                <div class="p-6">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg">
+                                            <div class="text-indigo-600 dark:text-indigo-400 font-bold text-xl">95%</div>
+                                            <div class="text-gray-600 dark:text-gray-300 text-sm">Success Rate</div>
+                                        </div>
+                                        <div class="bg-pink-50 dark:bg-pink-900/20 p-4 rounded-lg">
+                                            <div class="text-pink-600 dark:text-pink-400 font-bold text-xl">2.4s</div>
+                                            <div class="text-gray-600 dark:text-gray-300 text-sm">Avg. Login Time</div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                        <div class="h-full bg-indigo-600" style="width: 75%;"></div>
+                                    </div>
+                                    <div class="mt-6">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <span class="text-gray-600 dark:text-gray-300">Security Score</span>
+                                            <span class="text-gray-900 dark:text-white font-medium">9.8/10</span>
+                                        </div>
+                                        <div class="relative pt-1">
+                                            <div class="flex items-center justify-between">
+                                                <div>
+                                                    <span class="inline-block py-1 px-2 text-xs font-semibold text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/20 rounded-full">Excellent</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="md:flex md:items-center md:justify-between">
+                    <div class="flex justify-center md:order-2 space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-gray-500">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-500">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-500">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="mt-8 md:mt-0 md:order-1">
+                        <p class="text-center text-base text-gray-500 dark:text-gray-400">
+                            &copy; 2023 AuthFlow. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        feather.replace();
+        
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or use preferred color scheme
+        const savedTheme = localStorage.getItem('theme') || 
+                         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        html.classList.add(savedTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const theme = html.classList.contains('dark') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        });
+    </script>
+</body>
+</html>
